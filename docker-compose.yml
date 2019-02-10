@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  memberships:
+    image: ${DOCKER_REGISTRY-}memberships
+    build:
+      context: .\Memberships
+      dockerfile: Dockerfile
